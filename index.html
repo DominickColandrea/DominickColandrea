@@ -83,7 +83,6 @@
 </div>
 
 <div class="container projects hidden-xs-up">
-	<br>
 	<h1 class="display-3 text-center">Projects</h1>
 		<div class="flex">
 			<a href="https://hudsonvalleydrones.biz"><img class="img-fluid" src="assets/hvd.png" height="500px" width="500px" alt="Hudson Valley Drones"/></a>
@@ -102,21 +101,23 @@
 </div>
 
 <div class="container contact hidden-xs-up">
-			<br>
 		<h1 class="display-3 text-center">Any questions?</h1>
 		<br>
 		<div class="col"><p class="text-center">Send me anything regarding questions, contracts, quotes or just a nice message!</p></div>
 			<form action="https://formspree.io/dominickcolandreadev@gmail.com" class="form-horizontal" method="POST">
 			<div class="form-group">
-				<input class="form-control" id="name" name="name" placeholder="Name" required="" type="text">
+				<input class="form-control" id="name" name="name" placeholder="Name" required="" type="text" autocomplete='name'>
 			</div>
 			<div class="form-group">
-				<input class="form-control" id="email" name="_replyto" placeholder="Email" required="" type="email">
+				<input class="form-control" id="email" name="_replyto" placeholder="Email" required="" type="email" autocomplete='email'>
 			</div>
 			<div class="form-group">
 				<textarea class="form-control" id="comment" name="message" placeholder="Message..." required="" rows="4"></textarea>
-			</div><input class="btn btn-primary" type="submit" value="Send"> <input class="btn btn-light" type="reset" value="Clear">
-			<input id="gotchaHide" class="form-control" name="_gotcha" type="text">
+			</div>
+			<div class="flex">
+				<input class="btn" type="submit" value="Send" /> <input class="btn" type="reset" value="Clear"/>
+				<input id="gotchaHide" class="form-control" name="_gotcha" type="text">
+			</div>
 		</form><!--end form-->
 </div>
 
