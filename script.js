@@ -7,6 +7,7 @@ $("#DC").click(function(){
 		$(".DC").fadeIn(700).removeClass("hidden-xs-up");
 		location.replace("#DC");
 		loc="DC";
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	}//end if
 })//end DC click
 
@@ -18,6 +19,7 @@ $("#projects").click(function(){
 		$(".projects").fadeIn(700).removeClass("hidden-xs-up");
 		location.replace("#projects");
 		loc="projects";
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	}//end if
 })//end contact click
 
@@ -29,6 +31,7 @@ if (loc != "contact") {
 	$(".contact").fadeIn(700).removeClass("hidden-xs-up");
 	location.replace("#contact");
 	loc="contact";
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
 }//end if
 })//end contact click
 
