@@ -14,7 +14,7 @@ $hoverScaleIcon: 1.5;
 $preHoverScaleIcon: 1;
 
 h1{
-	padding-top:50px;
+	padding-top:100px;
 }
 
 .wrapper {
@@ -41,6 +41,9 @@ h1{
 }
 
 @media (max-width: 767px) {
+	.navbar{
+		padding:5px;
+	}
 	h2{
 		font-size:25px;
 	}
@@ -55,6 +58,9 @@ h1{
 	}
 }
 @media (min-width:768px) {
+	.navbar{
+		padding:10px;
+	}
 	h2{
 		font-size:28px;
 	}
@@ -69,6 +75,9 @@ h1{
 	}
 }
 @media (min-width:992px) {
+	.navbar{
+		padding:12px;
+	}
 	h2{
 		font-size:32px;
 	}
