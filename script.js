@@ -71,7 +71,7 @@ function tick() {
 
             if(thing.length == 0){
                 mode = "delete";
-                delay = 1500;
+                delay = 2000;
             } else {
                 delay = 32 + Math.round(Math.random() * 40);
             }
@@ -85,9 +85,9 @@ function tick() {
             if(message.length == 0)
             {
                 mode = "write";
-                delay = 1500;
+                delay = 1000;
             } else {
-                delay = 32 + Math.round(Math.random() * 100);
+                delay = 32 + Math.round(Math.random() * 40);
             }
             break;
     }
