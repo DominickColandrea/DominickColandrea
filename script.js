@@ -1,37 +1,63 @@
 $(function() {
-	let loc = "DC";
+	let loc ="DC";
+
+	function DC(){
+		$(".link").removeClass("active");
+		$(".container").hide().addClass("hidden-xs-up");
+		$(".DC").fadeIn(700).removeClass("hidden-xs-up");
+		window.location.href.replace("#DC");
+		loc = "DC";
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
+	}//end DC
+
+	function project(){
+		$(".link").removeClass("active");
+		$("#projects").addClass("active");
+		$(".container").hide().addClass("hidden-xs-up");
+		$(".projects").fadeIn(700).removeClass("hidden-xs-up");
+		window.location.href.replace("#projects");
+		loc = "projects";
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
+}//end project
+
+	function contact(){
+		$(".link").removeClass("active");
+		$("#contact").addClass("active");
+		$(".container").hide().addClass("hidden-xs-up");
+		$(".contact").fadeIn(700).removeClass("hidden-xs-up");
+		window.location.href.replace("#contact");
+		loc = "contact";
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
+}//end contact
+
+
 	$("#DC").click(function() {
 		if (loc != "DC") {
-			$(".link").removeClass("active");
-			$(".container").hide().addClass("hidden-xs-up");
-			$(".DC").fadeIn(700).removeClass("hidden-xs-up");
-			location.replace("#DC");
-			loc = "DC";
-			document.body.scrollTop = document.documentElement.scrollTop = 0;
+			DC();
 		} //end if
 	}) //end DC click
 	$("#projects").click(function() {
 		if (loc != "projects") {
-			$(".link").removeClass("active");
-			$("#projects").addClass("active");
-			$(".container").hide().addClass("hidden-xs-up");
-			$(".projects").fadeIn(700).removeClass("hidden-xs-up");
-			location.replace("#projects");
-			loc = "projects";
-			document.body.scrollTop = document.documentElement.scrollTop = 0;
+			project();
 		} //end if
 	}) //end contact click
 	$("#contact").click(function() {
 		if (loc != "contact") {
-			$(".link").removeClass("active");
-			$("#contact").addClass("active");
-			$(".container").hide().addClass("hidden-xs-up");
-			$(".contact").fadeIn(700).removeClass("hidden-xs-up");
-			location.replace("#contact");
-			loc = "contact";
-			document.body.scrollTop = document.documentElement.scrollTop = 0;
+			contact();
 		} //end if
 	}) //end contact click
+
+	if (window.location.href == "file:///C:/Users/Dom/Desktop/WebDev/1Portfolio/PortfolioSite/index.html" || window.location.href == "file:///C:/Users/Dom/Desktop/WebDev/1Portfolio/PortfolioSite/index.html#DC") {//change url on upload
+		DC();
+	}
+	else if (window.location.href == "file:///C:/Users/Dom/Desktop/WebDev/1Portfolio/PortfolioSite/index.html#projects") {//change url on upload
+		project();
+	}
+	else {
+		contact();
+	}
+
+
 	let container = document.getElementById('head');
 	let things = ["coding", "learning", "on the grind", "improving", "adapting", "moving forward", "a work in progress"];
 	let t = -1;
