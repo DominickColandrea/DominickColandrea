@@ -5,7 +5,7 @@ $(function() {
 		$(".link").removeClass("active");
 		$(".container").hide().addClass("hidden-xs-up");
 		$(".DC").fadeIn(700).removeClass("hidden-xs-up");
-		window.location.href.replace("#DC");
+		location.replace("#DC");
 		loc = "DC";
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	}//end DC
@@ -15,7 +15,7 @@ $(function() {
 		$("#projects").addClass("active");
 		$(".container").hide().addClass("hidden-xs-up");
 		$(".projects").fadeIn(700).removeClass("hidden-xs-up");
-		window.location.href.replace("#projects");
+		location.replace("#projects");
 		loc = "projects";
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
 }//end project
@@ -25,7 +25,7 @@ $(function() {
 		$("#contact").addClass("active");
 		$(".container").hide().addClass("hidden-xs-up");
 		$(".contact").fadeIn(700).removeClass("hidden-xs-up");
-		window.location.href.replace("#contact");
+		location.replace("#contact");
 		loc = "contact";
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
 }//end contact
