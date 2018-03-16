@@ -56,6 +56,10 @@ h1{
 	p {
 		font-size:15px;
 	}
+	#me{
+		height: 120px;
+		width:auto;
+	}
 }
 @media (min-width:768px) {
 	.navbar{
@@ -73,6 +77,10 @@ h1{
 	p {
 		font-size:18px;
 	}
+	#me{
+		height: 170px;
+		width:auto;
+	}
 }
 @media (min-width:992px) {
 	.navbar{
@@ -89,6 +97,10 @@ h1{
 	}
 	p {
 		font-size: 20px;
+	}
+	#me{
+		height: 220px;
+		width:auto;
 	}
 }
 
