@@ -47,14 +47,14 @@ $(function() {
 		} //end if
 	}) //end contact click
 
-	if (window.location.href == "file:///C:/Users/Dom/Desktop/WebDev/1Portfolio/PortfolioSite/index.html" || window.location.href == "file:///C:/Users/Dom/Desktop/WebDev/1Portfolio/PortfolioSite/index.html#DC") {//change url on upload
-		DC();
-	}
-	else if (window.location.href == "file:///C:/Users/Dom/Desktop/WebDev/1Portfolio/PortfolioSite/index.html#projects") {//change url on upload
+	if (window.location.href == "file:///C:/Users/Dom/Desktop/WebDev/1Portfolio/PortfolioSite/index.html#projects") {//change url on upload
 		project();
 	}
-	else {
+	else if (window.location.href == "file:///C:/Users/Dom/Desktop/WebDev/1Portfolio/PortfolioSite/index.html#contact"){
 		contact();
+	}
+	else {
+		DC();
 	}
 
 
