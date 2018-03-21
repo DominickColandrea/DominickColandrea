@@ -47,10 +47,10 @@ $(function() {
 		} //end if
 	}) //end contact click
 
-	if (window.location.href == "file:///C:/Users/Dom/Desktop/WebDev/1Portfolio/PortfolioSite/index.html#projects") {//change url on upload
+	if (window.location.href == "https://dominickcolandrea.github.io/DominickColandrea/index.html#projects") {//change url on upload
 		project();
 	}
-	else if (window.location.href == "file:///C:/Users/Dom/Desktop/WebDev/1Portfolio/PortfolioSite/index.html#contact"){
+	else if (window.location.href == "https://dominickcolandrea.github.io/DominickColandrea/index.html#contact"){
 		contact();
 	}
 	else {
